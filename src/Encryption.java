@@ -35,4 +35,21 @@ public class Encryption {
             alphabets.add(letter);
         }
     }
+
+    public char getAlphabet(int value){
+       if(value < 0 || value >25){
+           System.out.println("Input Error");
+           return '0';
+       }
+        return alphabets.get(value);
+
+    }
+
+    public int getPosition(char value){
+        if (!Character.isLetter(value)) {
+            System.out.println("Input Error");
+            return -1;
+        }
+        return alphabets.indexOf(Character.toLowerCase(value));
+    }
 }
