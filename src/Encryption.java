@@ -52,4 +52,21 @@ public class Encryption {
         }
         return alphabets.indexOf(Character.toLowerCase(value));
     }
+
+        public char getSymbol(int position) {
+        if (position < 0 || position > 25) {
+            System.out.println("Input Error");
+            return '0';
+        }
+        return symbols.get(position);
+
+    }
+
+    public int getSymbolPosition(char symbol) {
+        if (!Character.isLetter(symbol)) {
+            System.out.println("Input Error");
+            return -1;
+        }
+        return alphabets.indexOf(symbol);
+    }
 }
