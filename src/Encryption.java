@@ -52,26 +52,21 @@ public class Encryption {
         }
         return alphabets.indexOf(Character.toLowerCase(value));
     }
-<<<<<<< HEAD
-    public char getSymbol(int position){
-        if (position < 0 || position >25){
-            System.out.println("Input Error");
-            return '0';
-    }
-=======
+
+
+
 
         public char getSymbol(int position) {
         if (position < 0 || position > 25) {
             System.out.println("Input Error");
             return '0';
         }
->>>>>>> 8b07be8686df68b488c0b9a2e2e606512253a16a
+
         return symbols.get(position);
 
     }
 
-<<<<<<< HEAD
-=======
+
     public int getSymbolPosition(char symbol) {
         if (!Character.isLetter(symbol)) {
             System.out.println("Input Error");
@@ -79,6 +74,6 @@ public class Encryption {
         }
         return alphabets.indexOf(symbol);
     }
->>>>>>> 8b07be8686df68b488c0b9a2e2e606512253a16a
+
 }
 
