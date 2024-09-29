@@ -37,7 +37,7 @@ public class Encryption {
     }
 
     public char getAlphabet(int value){
-       if(value < 0 || value >25){
+       if (value < 0 || value >25){
            System.out.println("Input Error");
            return '0';
        }
@@ -52,4 +52,14 @@ public class Encryption {
         }
         return alphabets.indexOf(Character.toLowerCase(value));
     }
+    public char getSymbol(int position){
+        if (position < 0 || position >25){
+            System.out.println("Input Error");
+            return '0';
+    }
+        return symbols.get(position);
+
+    }
+
 }
+
