@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public static void main(String[] arg) {
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("1 - Encrypt");
+    System.out.println("2 - Decrypt");
+    System.out.println("3 - Terminate");
+
+    System.out.println("Enter choice:");
+
+    int userChoice = 0;
+    input.nextLine();
+
+    while (true) {
+        System.out.println("1, 2, or 3");
+        userChoice = input.nextInt();
+
+        if (userChoice == 1) {
+            System.out.println("Enter the plain text message");
+            String plainText = input.nextLine();
+            String encryptedMessage = encrypt(plainText);
+            System.out.println("Encrypted message: " + encryptedMessage);
+
+        } else if (userChoice == 2) {
+            System.out.println("Enter the encrypted text message");
+            String encryptedText = input.nextLine();
+            String decryptedMessage = decrypt(encryptedText);
+            System.out.println("Decrypted message: " + decryptedMessage);
+
+
+
+
+        }
+    }
+
+
+
+
+}
